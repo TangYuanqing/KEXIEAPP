@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:weightSum="1"
-    android:background="@android:color/white">
+    android:background="@drawable/bkg">
     <ImageView
     android:layout_width="220dp"
     android:layout_height="220dp"

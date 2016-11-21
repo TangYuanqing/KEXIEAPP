@@ -7,10 +7,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="59dp"
+            android:layout_height="55dp"
             android:background="#1E88E5"
             android:orientation="horizontal">
 
@@ -22,35 +23,48 @@
                 android:layout_gravity="start|center" />
 
             <TextView
+                android:visibility="invisible"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="8"
-                android:layout_gravity="center"
-                android:textSize="22sp"
+                android:textSize="30sp"
                 android:text="@string/info"
-                android:textColor="#ffffff" />
-
+                android:textColor="#ffffff"
+                android:id="@+id/textView" />
             <Button
                 android:id="@+id/home"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/home"
-                android:layout_weight="0.05" />
+                android:layout_marginRight="10dp"
+                android:background="@drawable/back" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E88E5"
+            android:layout_weight="0.25">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left|bottom"
+                android:background="@drawable/about"/>
+        </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1.2dp"
             android:background="@drawable/shadow"/>
-
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
             android:text="@string/CHUPIN"
             android:textColor="@android:color/black"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:gravity="left"
+            android:id="@+id/textView2" />
     </LinearLayout>
 </LinearLayout>
