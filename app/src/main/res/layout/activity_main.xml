@@ -44,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="1.2dp"
             android:background="@drawable/shadow"/>
+
         <Button
             android:id="@+id/btn_scan_barcode"
             android:layout_width="200dp"
@@ -52,11 +53,7 @@
             android:layout_gravity="center"
             android:background="@drawable/scan"
             />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

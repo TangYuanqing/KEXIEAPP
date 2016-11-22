@@ -11,5 +11,4 @@
     android:layout_width="400dp"
     android:layout_height="400dp"
     android:background="@drawable/logo" />
-
 </LinearLayout>
